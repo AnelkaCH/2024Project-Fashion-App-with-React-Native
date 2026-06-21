@@ -1,10 +1,8 @@
 # Daily Fashion - A Fashion App made with React Native
 
-(Note: this was created in 2024, but I finally feel like uploading it to GitHub in 2026 :/. IDK if it works now, haven't tested it)
+(Note: this was created in 2024, but I finally feel like uploading it to GitHub in 2026 :/. IDK if it works now, haven't tested it. Also, I have lost a lot of my original assets when transferring data to my new laptop so I will put screenshots of it that I have on my phone of the app. Please let me know.)
 
 To end my journey in app dev, I wanted to go with a big bang. So, I tried making a full-stack React Native e-commerce-style app for browsing and managing fashion products, built with Realm database, Drawer Navigation, image upload from gallery, zoom, deep-linking to social media, and responsive layout. It covers the full CRUD cycle and brings together almost everything from my journey.
-
----
 
 ## What it does
 
@@ -39,8 +37,6 @@ To end my journey in app dev, I wanted to go with a big bang. So, I tried making
 **Splash Screen**
 - Displays for 3 seconds on launch, then replaces itself with the Drawer (no back-button loop)
 
----
-
 ## Built with
 
 - React Native (CLI)
@@ -54,8 +50,6 @@ To end my journey in app dev, I wanted to go with a big bang. So, I tried making
 - `react-native-elements` = icons, CheckBox
 - `Linking` (React Native built-in) = deep links to WhatsApp, Instagram, Messenger
 - `useRef` = to programmatically reset the Select Dropdown after save
-
----
 
 ## Getting started
 
@@ -87,7 +81,11 @@ npx react-native run-android
 
 > **Social media icons:** Place `whatsapp.png`, `instagram.png`, and `facebook.png` in `assets/images/`. These are `require()`'d directly so the files must exist or the app will crash.
 
----
+## Screenshots
+
+<img width="213" height="383" alt="image" src="https://github.com/user-attachments/assets/16f431f8-911a-40aa-9a5d-798150d0158a" />
+
+
 
 ## What I learned
 
@@ -100,8 +98,6 @@ This was the hardest project by a significant margin, and also the one I'm most 
 **`useRef` for the dropdown reset** was a small thing that taught me something big: not everything in React needs to be state. Some things just need a stable reference to a DOM-like node so you can call a method on it. `dropdownRef.current.reset()` was the first time I used `useRef` for something other than a text input.
 
 **`navigation.replace()` on the Splash Screen** — understanding the difference between `navigate()` (pushes to stack, back button returns) and `replace()` (swaps in place, no going back) was a detail that actually matters for user experience.
-
----
 
 ## Notes
 
